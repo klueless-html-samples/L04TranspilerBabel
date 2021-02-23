@@ -1,8 +1,9 @@
 # L04 Transpiler Babel
 
-> L04 Transpiler Babel in HTML
+> Using Babel to transpile and polyfill
 
 As a Javascript Developer, I want to target the latest ES features while maintaining browser compatibility, so that I can code fast but support older browsers
+
 
 This code is based off this article [Why you don’t need Babel](https://blog.logrocket.com/why-you-dont-need-babel/)
 
@@ -31,7 +32,7 @@ Before and after for L04 Transpiler Babel in HTML
 
 ## Development
 
-Run VSCode Live Server on index.html or open in your browser
+Run `node dist/test.js` from command line
 
 ```bash
 # cd [YouCustomDevFolder]
@@ -50,8 +51,6 @@ node dist/test.js
 
 ## Code Setup
 
-Run VSCode Live Server on index.html or open in your browser
-
 ```bash
 # Setup Transpilers for ES6 support
 npm install --save-dev @babel/core @babel/cli @babel/preset-env
@@ -66,6 +65,7 @@ Add the following to package.json.
     "defaults"
   ]
 ```
+
 ## License
 
 The code is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
