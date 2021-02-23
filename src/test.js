@@ -18,7 +18,14 @@ console.assert(dogName === undefined);
 
 console.assert(adventurer.someNonExistentMethod?.() === undefined);
 
-// use browser API fetch, to check linting
-fetch("https://jsonplaceholder.typicode.com/todos/1")
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+if (false)
+{
+  // use browser API fetch, to check linting
+  fetch("https://jsonplaceholder.typicode.com/todos/1")
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+}
+else
+{
+  console.log('do not run fetch API as it is not available from node')
+}
